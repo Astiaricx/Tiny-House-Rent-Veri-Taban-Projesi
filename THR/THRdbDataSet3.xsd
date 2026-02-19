@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="THRdbDataSet3" targetNamespace="http://tempuri.org/THRdbDataSet3.xsd" xmlns:mstns="http://tempuri.org/THRdbDataSet3.xsd" xmlns="http://tempuri.org/THRdbDataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="THRdbKiraEkran" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="THRdbKiraEkran (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.THR.Properties.Settings.GlobalReference.Default.THRdbKiraEkran" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="kiraciEkran3TableAdapter" GeneratorDataComponentClassName="kiraciEkran3TableAdapter" Name="kiraciEkran3" UserDataComponentName="kiraciEkran3TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="THRdbKiraEkran (Settings)" DbObjectName="THRdb.dbo.kiraciEkran3" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id, Başlık, Açıklama, Konum, Fiyat, Ad, Soyad FROM dbo.kiraciEkran3</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id" DataSetColumn="id" />
+              <Mapping SourceColumn="Başlık" DataSetColumn="Başlık" />
+              <Mapping SourceColumn="Açıklama" DataSetColumn="Açıklama" />
+              <Mapping SourceColumn="Konum" DataSetColumn="Konum" />
+              <Mapping SourceColumn="Fiyat" DataSetColumn="Fiyat" />
+              <Mapping SourceColumn="Ad" DataSetColumn="Ad" />
+              <Mapping SourceColumn="Soyad" DataSetColumn="Soyad" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="THRdbDataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="THRdbDataSet3" msprop:Generator_DataSetName="THRdbDataSet3">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="kiraciEkran3" msprop:Generator_RowEvHandlerName="kiraciEkran3RowChangeEventHandler" msprop:Generator_RowDeletedName="kiraciEkran3RowDeleted" msprop:Generator_RowDeletingName="kiraciEkran3RowDeleting" msprop:Generator_RowEvArgName="kiraciEkran3RowChangeEvent" msprop:Generator_TablePropName="kiraciEkran3" msprop:Generator_RowChangedName="kiraciEkran3RowChanged" msprop:Generator_RowChangingName="kiraciEkran3RowChanging" msprop:Generator_TableClassName="kiraciEkran3DataTable" msprop:Generator_RowClassName="kiraciEkran3Row" msprop:Generator_TableVarName="tablekiraciEkran3" msprop:Generator_UserTableName="kiraciEkran3">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_UserColumnName="id" type="xs:int" />
+              <xs:element name="Başlık" msprop:Generator_ColumnPropNameInRow="Başlık" msprop:Generator_ColumnPropNameInTable="BaşlıkColumn" msprop:Generator_ColumnVarNameInTable="columnBaşlık" msprop:Generator_UserColumnName="Başlık" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Açıklama" msprop:Generator_ColumnPropNameInRow="Açıklama" msprop:Generator_ColumnPropNameInTable="AçıklamaColumn" msprop:Generator_ColumnVarNameInTable="columnAçıklama" msprop:Generator_UserColumnName="Açıklama" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Konum" msprop:Generator_ColumnPropNameInRow="Konum" msprop:Generator_ColumnPropNameInTable="KonumColumn" msprop:Generator_ColumnVarNameInTable="columnKonum" msprop:Generator_UserColumnName="Konum" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Fiyat" msprop:Generator_ColumnPropNameInRow="Fiyat" msprop:Generator_ColumnPropNameInTable="FiyatColumn" msprop:Generator_ColumnVarNameInTable="columnFiyat" msprop:Generator_UserColumnName="Fiyat" type="xs:short" minOccurs="0" />
+              <xs:element name="Ad" msprop:Generator_ColumnPropNameInRow="Ad" msprop:Generator_ColumnPropNameInTable="AdColumn" msprop:Generator_ColumnVarNameInTable="columnAd" msprop:Generator_UserColumnName="Ad" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Soyad" msprop:Generator_ColumnPropNameInRow="Soyad" msprop:Generator_ColumnPropNameInTable="SoyadColumn" msprop:Generator_ColumnVarNameInTable="columnSoyad" msprop:Generator_UserColumnName="Soyad" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:kiraciEkran3" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

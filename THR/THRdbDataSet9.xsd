@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="THRdbDataSet9" targetNamespace="http://tempuri.org/THRdbDataSet9.xsd" xmlns:mstns="http://tempuri.org/THRdbDataSet9.xsd" xmlns="http://tempuri.org/THRdbDataSet9.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="THRdbKiraEkran" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="THRdbKiraEkran (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.THR.Properties.Settings.GlobalReference.Default.THRdbKiraEkran" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="RezervasyonEkranTableAdapter" GeneratorDataComponentClassName="RezervasyonEkranTableAdapter" Name="RezervasyonEkran" UserDataComponentName="RezervasyonEkranTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="THRdbKiraEkran (Settings)" DbObjectName="THRdb.dbo.RezervasyonEkran" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT rezID, ilanID, Başlık, [Başlangıç Tarihi], [Bitiş Tarihi], odemeID, [Ödeme Türünüz], [Ödeme Durumunuz], kullaniciID, [Ev Sahibi] FROM dbo.RezervasyonEkran</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="rezID" DataSetColumn="rezID" />
+              <Mapping SourceColumn="ilanID" DataSetColumn="ilanID" />
+              <Mapping SourceColumn="Başlık" DataSetColumn="Başlık" />
+              <Mapping SourceColumn="Başlangıç Tarihi" DataSetColumn="Başlangıç Tarihi" />
+              <Mapping SourceColumn="Bitiş Tarihi" DataSetColumn="Bitiş Tarihi" />
+              <Mapping SourceColumn="odemeID" DataSetColumn="odemeID" />
+              <Mapping SourceColumn="Ödeme Türünüz" DataSetColumn="Ödeme Türünüz" />
+              <Mapping SourceColumn="Ödeme Durumunuz" DataSetColumn="Ödeme Durumunuz" />
+              <Mapping SourceColumn="kullaniciID" DataSetColumn="kullaniciID" />
+              <Mapping SourceColumn="Ev Sahibi" DataSetColumn="Ev Sahibi" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="THRdbDataSet9" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="THRdbDataSet9" msprop:Generator_DataSetName="THRdbDataSet9">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="RezervasyonEkran" msprop:Generator_RowEvHandlerName="RezervasyonEkranRowChangeEventHandler" msprop:Generator_RowDeletedName="RezervasyonEkranRowDeleted" msprop:Generator_RowDeletingName="RezervasyonEkranRowDeleting" msprop:Generator_RowEvArgName="RezervasyonEkranRowChangeEvent" msprop:Generator_TablePropName="RezervasyonEkran" msprop:Generator_RowChangedName="RezervasyonEkranRowChanged" msprop:Generator_RowChangingName="RezervasyonEkranRowChanging" msprop:Generator_TableClassName="RezervasyonEkranDataTable" msprop:Generator_RowClassName="RezervasyonEkranRow" msprop:Generator_TableVarName="tableRezervasyonEkran" msprop:Generator_UserTableName="RezervasyonEkran">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="rezID" msprop:Generator_ColumnPropNameInRow="rezID" msprop:Generator_ColumnPropNameInTable="rezIDColumn" msprop:Generator_ColumnVarNameInTable="columnrezID" msprop:Generator_UserColumnName="rezID" type="xs:int" />
+              <xs:element name="ilanID" msprop:Generator_ColumnPropNameInRow="ilanID" msprop:Generator_ColumnPropNameInTable="ilanIDColumn" msprop:Generator_ColumnVarNameInTable="columnilanID" msprop:Generator_UserColumnName="ilanID" type="xs:int" />
+              <xs:element name="Başlık" msprop:Generator_ColumnPropNameInRow="Başlık" msprop:Generator_ColumnPropNameInTable="BaşlıkColumn" msprop:Generator_ColumnVarNameInTable="columnBaşlık" msprop:Generator_UserColumnName="Başlık" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Başlangıç_x0020_Tarihi" msprop:Generator_ColumnPropNameInRow="Başlangıç_Tarihi" msprop:Generator_ColumnPropNameInTable="Başlangıç_TarihiColumn" msprop:Generator_ColumnVarNameInTable="columnBaşlangıç_Tarihi" msprop:Generator_UserColumnName="Başlangıç Tarihi" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Bitiş_x0020_Tarihi" msprop:Generator_ColumnPropNameInRow="Bitiş_Tarihi" msprop:Generator_ColumnPropNameInTable="Bitiş_TarihiColumn" msprop:Generator_ColumnVarNameInTable="columnBitiş_Tarihi" msprop:Generator_UserColumnName="Bitiş Tarihi" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="odemeID" msprop:Generator_ColumnPropNameInRow="odemeID" msprop:Generator_ColumnPropNameInTable="odemeIDColumn" msprop:Generator_ColumnVarNameInTable="columnodemeID" msprop:Generator_UserColumnName="odemeID" type="xs:int" />
+              <xs:element name="Ödeme_x0020_Türünüz" msprop:Generator_ColumnPropNameInRow="Ödeme_Türünüz" msprop:Generator_ColumnPropNameInTable="Ödeme_TürünüzColumn" msprop:Generator_ColumnVarNameInTable="columnÖdeme_Türünüz" msprop:Generator_UserColumnName="Ödeme Türünüz" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Ödeme_x0020_Durumunuz" msprop:Generator_ColumnPropNameInRow="Ödeme_Durumunuz" msprop:Generator_ColumnPropNameInTable="Ödeme_DurumunuzColumn" msprop:Generator_ColumnVarNameInTable="columnÖdeme_Durumunuz" msprop:Generator_UserColumnName="Ödeme Durumunuz" type="xs:boolean" minOccurs="0" />
+              <xs:element name="kullaniciID" msprop:Generator_ColumnPropNameInRow="kullaniciID" msprop:Generator_ColumnPropNameInTable="kullaniciIDColumn" msprop:Generator_ColumnVarNameInTable="columnkullaniciID" msprop:Generator_UserColumnName="kullaniciID" type="xs:int" />
+              <xs:element name="Ev_x0020_Sahibi" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="Ev_Sahibi" msprop:Generator_ColumnPropNameInTable="Ev_SahibiColumn" msprop:Generator_ColumnVarNameInTable="columnEv_Sahibi" msprop:Generator_UserColumnName="Ev Sahibi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="101" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:RezervasyonEkran" />
+      <xs:field xpath="mstns:rezID" />
+      <xs:field xpath="mstns:ilanID" />
+      <xs:field xpath="mstns:odemeID" />
+      <xs:field xpath="mstns:kullaniciID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,42 @@
+### Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+bin/
+obj/
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+
+# NuGet
+*.nupkg
+packages/
+*.snupkg
+
+# Publish
+*.Publish.xml
+
+# IIS Express
+IISExpress/
+
+# Test results
+TestResults/
+
+# SQL Server files
+*.mdf
+*.ldf
+
+# OS generated files
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# Rider
+*.sln.iml
